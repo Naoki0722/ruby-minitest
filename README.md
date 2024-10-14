@@ -1,7 +1,7 @@
-# Ruby-rspec
+# Ruby-minitest
 
 ## 概要
-純RubyとRSpecを使用してテストを実行するための環境。
+純RubyとMinitestを使用してテストを実行するための環境。
 
 ## インストール
 
@@ -10,19 +10,17 @@ bundle install
 ```
 
 ## 使用方法
-テストコードはlibディレクトリの中に格納。
-Rspecの`$LOAD_PATH`が`spec`と`lib`ディレクトリを自動読み込みする
+コードはlibディレクトリの中に格納。
+
 
 
 ## テスト
-RSpecを使っています。
+純正Minitestを使っています。
 
-[RSpec documentation](https://rspec.info/)
-
-RSpecを使用してテストを実行するには、以下のコマンドを使用してください。
+Minitestを使用してテストを実行するには、以下のコマンドを使用してください。
 
 ```bash
-bundle exec rspec
+ruby test/{target_test_filename}.rb
 ```
 
 ## 使用用途
