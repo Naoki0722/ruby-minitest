@@ -7,7 +7,10 @@ class TestCase
     @name = name
   end
 
+  def set_up; end
+
   def run
+    set_up
     send(@name)
   end
 end
