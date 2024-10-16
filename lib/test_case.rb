@@ -11,17 +11,15 @@ class TestCase
   def set_up; end
   def tear_down; end
 
-  def run
-    result = TestResult.new
+  def run(result)
     result.test_started
     set_up
     begin
       send(@name)
     rescue Exception => e
-      p e
+      p e, @name
       result.test_failed
     end
     tear_down
-    result
   end
 end
