@@ -9,7 +9,6 @@ module Test
       @sample = ::Sample.new
     end
     def test_sample
-      p $LOAD_PATH
       assert_equal sample.num_plus(1, 2), 3
       assert_equal sample.num_minus(5, 2), 3
     end
